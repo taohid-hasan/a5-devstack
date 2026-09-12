@@ -1,12 +1,14 @@
 import { Suspense } from "react";
 import Banner from "./components/layouts/Banner";
 import Nav from "./components/layouts/Nav";
-import Technologies from "./components/technologies/Technologies";
-import type { Itechnologie } from "./types/technologie";
+import TechnologyCard from "../TechnologyCard";
+import type { ItechnologyType } from "../../types/types";
 import Footer from "./components/layouts/Footer";
+import TechnologyCard from './components/TechnologyCard';
+import { typeItechnologyType } from '.';
 
 
-const technologiesFetch = async (): Promise<Itechnologie[]> => {
+const technologiesFetch = async (): Promise<ItechnologyType[]> => {
   const res = await fetch("/data.json");
   const data = await res.json();
   return data;
@@ -19,9 +21,7 @@ function App() {
     <>
       <Nav />
       <Banner />
-      <Suspense fallback={<h2>Loading.....</h2>}>
-        <Technologies technologiesPromise={technologiesPromise} />
-      </Suspense>
+  
       <Footer />
       
     </>
