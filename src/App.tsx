@@ -1,9 +1,9 @@
 import { Suspense } from "react";
-import Banner from "./components/Banner";
-import Nav from "./components/Nav";
+import Banner from "./components/layouts/Banner";
+import Nav from "./components/layouts/Nav";
 import Technologies from "./components/technologies/Technologies";
 import type { Itechnologie } from "./types/technologie";
-import Footer from "./components/Footer";
+import Footer from "./components/layouts/Footer";
 
 
 const technologiesFetch = async (): Promise<Itechnologie[]> => {
