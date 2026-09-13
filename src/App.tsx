@@ -16,8 +16,8 @@ function App() {
 
   return (
     <>
+      <Navbar></Navbar>
       <section className="lg:px-10 px-2">
-        <Navbar></Navbar>
         <Banner></Banner>
         <Suspense
           fallback={<h2 className="text-center text-3xl">Loading Data...</h2>}
