@@ -1,8 +1,8 @@
 import { use, useState } from 'react';
-import TechnologyCard from '../components/TechnologyCard';
-import type { ITechnologyType } from '../types/types';
+import TechnologyCard from '../TechnologyCard';
+import type { ITechnologyType } from '../../types/types';
 
-import AllStacks from '../components/AllStacks';
+import AllStacks from '../AllStacks';
 
 interface Iprops {
   technologyPromise: Promise<ITechnologyType[]>;
