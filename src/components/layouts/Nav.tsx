@@ -7,15 +7,27 @@ const Nav = () => {
         <img src={Logo} alt="" />
 
         <ul className="flex gap-4 items-center">
-          <li>home</li>
-          <li>Technologies</li>
-          <li>Projects</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <a href="#" className='text-pink-600'>Home</a>
+          </li>
+          <li>
+            <a href="#">Technologies</a>
+          </li>
+          <li>
+            <a href="#">Projects</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
 
         <div>
-          <button className="btn bg-transparent border-none shadow-none">Sign In</button>
+          <button className="btn bg-transparent border-none shadow-none">
+            Sign In
+          </button>
           <button className="btn btn-active btn-secondary rounded-[50px]">
             Sign Up
           </button>

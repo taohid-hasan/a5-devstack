@@ -16,7 +16,7 @@ const Banner = () => {
           <button className="btn bg-linear-to-r from-orange-500 to-pink-500 text-white border-0">
             Explore Technologies
           </button>
-          <button className="btn">Learn More</button>
+          <button className="btn bg-transparent">Learn More</button>
         </div>
       </div>
       <div>
