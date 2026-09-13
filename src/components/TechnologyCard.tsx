@@ -1,6 +1,5 @@
 import { FaStar } from 'react-icons/fa6';
 import type { ITechnologyType } from '../types/types';
-import { Icon } from '@iconify/react';
 import { useState, type Dispatch, type SetStateAction } from 'react';
 import { Bounce, toast } from 'react-toastify';
 const TechnologyCard = ({
@@ -34,7 +33,11 @@ const TechnologyCard = ({
     <div className="p-5 border border-[#F1F5F9] rounded-2xl">
       <div className="flex justify-between mt-1">
         <div>
-          <Icon icon={technology.icon} />
+          <img
+            src={technology.icon}
+            alt={technology.name}
+            className="w-8 h-8"
+          />
         </div>
         <button className="px-2.5 py-0.5 bg-amber-200 font-sans rounded-full">
           {technology.badge}

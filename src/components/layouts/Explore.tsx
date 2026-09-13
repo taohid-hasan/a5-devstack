@@ -14,7 +14,7 @@ const Explore = ({ technologyPromise }: Iprops) => {
   const [selected, setSelected] = useState<ITechnologyType[]>([]);
 
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto px-7 py-4">
       <h2 className="font-inter text-4xl font-extrabold text-center lg:text-left">
         Explore the{' '}
         <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] text-transparent bg-clip-text">

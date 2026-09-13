@@ -2,7 +2,7 @@ import Stack from "../../assets/banner-stack.png";
 
 const Banner = () => {
   return (
-    <section className="container mx-auto flex justify-between items-center px-20 py-5">
+    <section className="container mx-auto flex justify-between items-center px-8 py-4">
       <div className="">
         <h2 className="text-6xl font-bold">Build Your Ideal</h2>
         <h2 className="text-6xl font-bold bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
