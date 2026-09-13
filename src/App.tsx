@@ -1,11 +1,10 @@
 import { Suspense, useState } from 'react';
-import './App.css';
-import Banner from './layouts/Banner';
-import Explore from './layouts/Explore';
-import Navbar from './layouts/Navbar';
+import Banner from './components/layouts/Banner';
+import Explore from './components/layouts/Explore';
+import Navbar from './components/layouts/Nav';
 import type { ITechnologyType } from './types/types';
 import { ToastContainer } from 'react-toastify';
-import Footer from './layouts/Footer';
+import Footer from './components/layouts/Footer';
 const technologyFetch = async (): Promise<ITechnologyType[]> => {
   const res = await fetch('./data.json');
   const data = await res.json();

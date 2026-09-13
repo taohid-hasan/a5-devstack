@@ -1,5 +1,5 @@
 import { FaStar } from 'react-icons/fa6';
-import type { ITechnologyType } from './types';
+import type { ITechnologyType } from '../types/types';
 import { Icon } from '@iconify/react';
 import { useState, type Dispatch, type SetStateAction } from 'react';
 import { Bounce, toast } from 'react-toastify';
@@ -10,7 +10,7 @@ const TechnologyCard = ({
 }: {
   technology: ITechnologyType;
   selected: ITechnologyType[];
-  setSeleted: Dispatch<SetStateAction<ITechnologyType[]>>;
+  setSelected: Dispatch<SetStateAction<ITechnologyType[]>>;
 }) => {
   const [isSelected, setIsSelected] = useState(false);
 
